@@ -32,6 +32,7 @@ jobs:
 
     - name: machine
       run: |
+        free -h
         df -h
         lscpu
 

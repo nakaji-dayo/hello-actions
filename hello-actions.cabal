@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 3832c4b57d4d3bdac2cc90297f1655d45e6bc311ac6170f52fd3ebbe069925b0
+-- hash: 5b8aa7298a494dd23cd9b4415d1cbd3aa81badaafb38e2e252c091ac77588361
 
 name:           hello-actions
 version:        0.1.0.0
@@ -33,7 +33,8 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
     , microlens
   default-language: Haskell2010
 
@@ -45,7 +46,8 @@ executable hello-actions-exe
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
     , hello-actions
     , microlens
   default-language: Haskell2010
@@ -59,7 +61,8 @@ test-suite hello-actions-test
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      aeson
+    , base >=4.7 && <5
     , hello-actions
     , microlens
   default-language: Haskell2010
