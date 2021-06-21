@@ -33,8 +33,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        stack build --only-dependencies --enable-tests --enable-benchmarks
+        stack build --only-dependencies --test --bench
     - name: Build
-      run: stack build --enable-tests --enable-benchmarks
+      run: stack build --test --bench
     - name: Run tests
       run: stack test
